@@ -53,7 +53,8 @@ def nodes_index():
                 ("surface.implicit_surface_solver", "SvExImplSurfaceSolverNode"),
                 ("surface.intersect_curve_surface", "SvExCrossCurveSurfaceNode"),
                 ("surface.quads_to_nurbs", "SvExQuadsToNurbsNode"),
-                ("surface.marching_cubes", "SvExMarchingCubesNode")
+                ("surface.marching_cubes", "SvExMarchingCubesNode"),
+                ("surface.triangular_mesh", "SvExGalGenerateMeshNode")
             ]),
             ("Extra Curves", [
                 ("curve.rbf_curve", "SvExRbfCurveNode"),

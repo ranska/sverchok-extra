@@ -82,6 +82,16 @@ except ImportError:
     info(mcubes_d.message)
     mcubes = None
 
+pygalmesh_d = dependencies["pygalmesh"] = Dependency("pygalmesh", "https://github.com/nschloe/pygalmesh")
+try:
+    import pygalmesh
+    pygalmesh_d.message = "Pygalmesh package is available"
+    pygalmesh_d.module = pygalmesh
+except ImportError:
+    pygalmesh_d.message = "Pygalmesh package is not available. Corresponding nodes will not be available"
+    info(pygalmesh_d.message)
+    pygalmesh = None
+
 circlify_d = dependencies["circlify"] = Dependency("circlify", "https://github.com/elmotec/circlify")
 try:
     import circlify
